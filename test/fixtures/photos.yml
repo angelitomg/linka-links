@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  filename: MyString
+  ip: MyString
+  user_agent: MyText
+  category: 
+
+two:
+  filename: MyString
+  ip: MyString
+  user_agent: MyText
+  category: 
