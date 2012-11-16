@@ -1,9 +1,9 @@
-Photup::Application.routes.draw do
-  resources :comments
-
-  resources :photos
+LinkaLinks::Application.routes.draw do
+  resources :links
 
   resources :categories
+
+  match 'links/:token/redirect' => 'links#redirect', :as => :token
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

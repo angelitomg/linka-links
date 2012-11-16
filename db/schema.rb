@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121114043815) do
+ActiveRecord::Schema.define(:version => 20121116021459) do
 
   create_table "categories", :force => true do |t|
     t.string   "category"
@@ -18,27 +18,17 @@ ActiveRecord::Schema.define(:version => 20121114043815) do
     t.datetime "updated_at", :null => false
   end
 
-  create_table "comments", :force => true do |t|
-    t.string   "name"
-    t.text     "content"
-    t.string   "ip"
-    t.text     "user_agent"
-    t.integer  "photo_id"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
-
-  add_index "comments", ["photo_id"], :name => "index_comments_on_photo_id"
-
-  create_table "photos", :force => true do |t|
-    t.string   "filename"
+  create_table "links", :force => true do |t|
+    t.text     "link"
+    t.text     "description"
     t.string   "ip"
     t.text     "user_agent"
     t.integer  "category_id"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
+    t.text     "token"
   end
 
-  add_index "photos", ["category_id"], :name => "index_photos_on_category_id"
+  add_index "links", ["category_id"], :name => "index_links_on_category_id"
 
 end
