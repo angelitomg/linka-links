@@ -6,25 +6,23 @@
 </p>
 
 <p>
+  <b>Link de Acesso:</b>
+  <%= link_to "Acessar", :controller => "links", :action => "redirect", :token => @link.token %>
+</p>
+
+<p>
   <b>Description:</b>
   <%= @link.description %>
 </p>
 
 <p>
-  <b>Ip:</b>
-  <%= @link.ip %>
-</p>
-
-<p>
-  <b>User agent:</b>
-  <%= @link.user_agent %>
+	<b>Clicks:</b>
+	<%= @clicks %>
 </p>
 
 <p>
   <b>Category:</b>
-  <%= @link.category %>
+  <%= @link.category.nil? ? '' : @link.category.category %>
 </p>
 
-
-<%= link_to 'Edit', edit_link_path(@link) %> |
 <%= link_to 'Back', links_path %>

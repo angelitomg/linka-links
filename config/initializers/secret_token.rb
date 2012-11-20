@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-LinkaLinks::Application.config.secret_token = 'b75ca57a971ce36f223fb6497634b154447511c6ff6d639cec12935623d653c11570922a1bbc29ac1bf93f70a0a55cc46782724eb2d4f83ef9382a8d5945ac76'
+LinkaLinks::Application.config.secret_token = 'b54d0182bedb13877b301f30f3d0ad1121d6399418542520abfc82fae68e3cbe3424979ca704fdd15d62806d153bea8b7aaf976573008c8adcfe4e36110e03d1'

@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Photup::Application.load_tasks
+LinkaLinks::Application.load_tasks
