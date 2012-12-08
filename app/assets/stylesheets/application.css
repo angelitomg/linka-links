@@ -11,3 +11,24 @@
  *= require_self
  *= require_tree .
 */
+body{margin:0;font-family:"Trebuchet MS",Sans;font-size:10pt;color:#444444;background:Transparent url(../f.png) repeat}
+div{text-align:left}
+a{text-decoration:none;color:#49006B}
+a:hover{text-decoration:underline;color:#000000}
+a img{border:0;margin-bottom:-3px}
+table{width:100%}
+table td{vertical-align:top}
+input,textarea,select{border:1px solid #999999;background:#FFFFFF;color:#000000;margin:2px;font-size:10pt}
+fieldset{border:1px dotted #AAAAFF}
+p{margin:0;padding:0}
+#p{width:950px;margin:10px; font-size: 13px; line-height: 18px;}
+#t{height:90px;margin:15px}
+#t table{padding-top:15px;padding-left:56px}
+.ta{color:#557799;font-size:58px;font-weight:bold}
+.tb{color:#10814E;font-size:14px}
+#f{padding:5px 20px;height:10px}
+#r{height:70px;text-align:center;padding-top:15px;color:#7F0037;border-top:dotted 1px #505050}
+#em{padding:3px 0 13px 0;text-align:left;font-size:10pt;border-bottom:dotted 1px #505050}
+#em a, #c a{color:#2222AA;}
+#em a{font-weight:bold;padding-right:30px}
+#c{min-height:200px}
