@@ -28,7 +28,8 @@ p{margin:0;padding:0}
 .tb{color:#10814E;font-size:14px}
 #f{padding:5px 20px;height:10px}
 #r{height:70px;text-align:center;padding-top:15px;color:#7F0037;border-top:dotted 1px #505050}
-#em{padding:3px 0 13px 0;text-align:left;font-size:10pt;border-bottom:dotted 1px #505050}
+#em{padding:3px 0 13px 0;text-align:left;font-size:10pt}
 #em a, #c a{color:#2222AA;}
 #em a{font-weight:bold;padding-right:30px}
+#eb{border-top:dotted 1px #505050;border-bottom:dotted 1px #505050}
 #c{min-height:200px}

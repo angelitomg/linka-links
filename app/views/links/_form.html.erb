@@ -14,15 +14,15 @@
   <div class="field">
     <%= f.label :link %><br />
     <%= f.text_field :link %>
-  </div>
+  </div><br/>
   <div class="field">
-    <%= f.label :description %><br />
+    <%= f.label :Descricao %><br />
     <%= f.text_area :description %>
-  </div>
+  </div><br/>
   <div class="field">
-    <%= f.label :category %><br />
+    <%= f.label :Categoria %><br />
     <%= f.collection_select :category_id, Category.all, :id, :category, {:prompt => true} %>
-  </div>
+  </div><br/>
   <div class="actions">
     <%= f.submit %>
   </div>
