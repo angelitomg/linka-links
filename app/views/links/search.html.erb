@@ -4,7 +4,7 @@
   <%= collection_select(:link, :category_id, Category.all, :id, :category) %>
   <%= submit_tag("Pesquisar") %>
 <% end %>
-
+<br/>
 <% if not @links.nil? then %>
 	<table>
 		<tr>

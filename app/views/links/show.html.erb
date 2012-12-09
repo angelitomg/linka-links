@@ -1,4 +1,7 @@
-<p id="notice"><%= notice %></p>
+<p>
+<label id="notice" style="color:#DD3030;font-weight:bold"><%= notice %></label>
+</p>
+<br/>
 
 <p>
   <b>Link:</b>
@@ -25,4 +28,3 @@
   <%= @link.category.nil? ? '' : @link.category.category %>
 </p>
 
-<%= link_to 'Back', links_path %>
