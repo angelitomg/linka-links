@@ -3,6 +3,8 @@ LinkaLinks::Application.routes.draw do
   match 'links/r/:token' => 'links#redirect', :as => :token
   
   match 'links/search' => 'links#search'
+  
+  match 'links/bannerAll' => 'links#bannerAll'
 
   resources :links
 

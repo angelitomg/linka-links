@@ -28,6 +28,15 @@ class LinksController < ApplicationController
     end
   end
 
+  # Metodo responsavel por exibir os detalhes de todos os link
+  def bannerAll
+    @link = Link
+    respond_to do |format|
+      format.html # bannerAll.html.erb
+      format.json { render json: @link }
+    end
+  end
+  
   # POST /links
   # POST /links.json
   # Metodo responsavel por inserir um link no banco de dados
