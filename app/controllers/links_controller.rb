@@ -6,12 +6,19 @@ class LinksController < ApplicationController
   # mais acessados do dia, os ultimos cadastrados e tambem um form
   # para cadastro de links
   def index
-    @link = Link.new
-	
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @links }
-    end
+  
+	# Verifica se o usuario esta logado
+	if session[:user_id].nil? then
+		redirect_to '/users/login'
+	else
+  
+		@link = Link.new
+		
+		respond_to do |format|
+		  format.html # index.html.erb
+		  format.json { render json: @links }
+		end
+	end
   end
 
   # GET /links/1
@@ -44,6 +51,9 @@ class LinksController < ApplicationController
   
 	# Cria o hash MD5 da string do link
     params[:link][:token] = Digest::MD5.hexdigest(params[:link][:link]).encode('UTF-8')
+	
+	# Obtem o ID do usuario
+	params[:link][:user_id] = session[:user_id]
 	
 	# Verifica se este hash ja nao existe no banco. MD5 gera conflitos, mas como sao 
 	# poucos links, isto nao sera problema.

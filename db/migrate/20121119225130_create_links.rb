@@ -7,9 +7,10 @@ class CreateLinks < ActiveRecord::Migration
       t.text :ip
       t.text :user_agent
       t.references :category
+	  t.references :user
 
       t.timestamps
     end
-    add_index :links, :category_id
+    add_index :links, :category_id, :user_id
   end
 end

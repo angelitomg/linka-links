@@ -1,12 +1,21 @@
 LinkaLinks::Application.routes.draw do
 
+  #resources :users
+
   match 'links/r/:token' => 'links#redirect', :as => :token
   
   match 'links/search' => 'links#search'
   
   match 'links/bannerAll' => 'links#bannerAll'
-
+  
+  match 'users/login' => 'users#login'
+  match 'users/new' => 'users#new'
+  post 'users' => 'users#create'
+  match 'users/logout' => 'users#logout'
+  
   resources :links
+  
+  root :to => 'links#index'
 
   resources :categories
 
