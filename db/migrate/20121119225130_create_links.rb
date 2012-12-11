@@ -11,6 +11,7 @@ class CreateLinks < ActiveRecord::Migration
 
       t.timestamps
     end
-    add_index :links, :category_id, :user_id
+    add_index :links, :category_id
+	add_index :links, :user_id
   end
 end

@@ -34,11 +34,13 @@ ActiveRecord::Schema.define(:version => 20121211023155) do
     t.text     "ip"
     t.text     "user_agent"
     t.integer  "category_id"
+    t.integer  "user_id"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
   end
 
   add_index "links", ["category_id"], :name => "index_links_on_category_id"
+  add_index "links", ["user_id"], :name => "index_links_on_user_id"
 
   create_table "users", :force => true do |t|
     t.string   "email"
