@@ -1,3 +1,4 @@
+<h1>Pesquisar link</h1>
 <%= form_tag(:controller => "links", :action => "search", :method => "post") do %>
   <%= label_tag(:description, "Pesquisar por:") %>
   <%= text_field_tag(:description) %>
@@ -13,7 +14,7 @@
 		</tr>
 		<% @links.each do |link| %>
 			<tr>
-				<td><%= link_to link.token, link %></td>
+				<td><%= link_to link.link, link %></td>
 				<td><%= link.description %></td>
 			</tr>
 		<% end %>

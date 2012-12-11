@@ -1,7 +1,6 @@
-teste...
-<% if not @link.nil? then %>
-	teste...
-	<% @link.each do |link| %>
-		<%= @link.description %>
+<h1>Lista completa</h1>
+<% if not @links.nil? then %>
+	<% @links.each do |link| %>
+			<%= link_to link.link, link %><br/>
 	<% end %>
 <% end %>

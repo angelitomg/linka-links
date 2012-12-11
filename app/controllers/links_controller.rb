@@ -37,7 +37,7 @@ class LinksController < ApplicationController
 
   # Metodo responsavel por exibir os detalhes de todos os link
   def bannerAll
-    @link = Link
+    @links = Link.order("link asc")
     respond_to do |format|
       format.html # bannerAll.html.erb
       format.json { render json: @link }

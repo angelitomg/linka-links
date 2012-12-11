@@ -24,7 +24,7 @@ p{margin:0;padding:0}
 #p{width:950px;margin:10px; font-size: 13px; line-height: 18px;}
 #t{height:90px;margin:15px}
 #t table{padding-top:15px;padding-left:56px}
-.ta{color:#557799;font-size:58px;font-weight:bold}
+.ta{color:#DD0022;font-size:58px;font-weight:bold}
 .tb{color:#10814E;font-size:14px}
 #f{padding:5px 20px;height:10px}
 #r{height:70px;text-align:center;padding-top:15px;color:#7F0037;border-top:solid 1px #505050}
@@ -33,3 +33,5 @@ p{margin:0;padding:0}
 #em a{font-weight:bold;padding-right:30px}
 #eb{border-top:solid 1px #808080;border-bottom:solid 1px #BBBBBB}
 #c{min-height:200px}
+.globo{width:177px;height:44px;background:Transparent url(../ix.png) no-repeat;padding: 9px 0 0 50px;overflow:hidden}
+.globo:hover{background:Transparent url(../ix2.png) no-repeat}
