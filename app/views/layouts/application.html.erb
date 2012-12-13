@@ -31,11 +31,9 @@
 <a href="/links/">ADICIONAR LINK</a>
 <a href="/links/search">PESQUISAR LINK</a>
 <a href="/links/bannerAll">LISTA COMPLETA</a>
-<span style="color:red">
 <% if not session[:user_id].nil? then %>
-	<%= link_to 'SAIR', '/users/logout' %>
+	<a href="/usrs/logout" style="color:red">SAIR</a>
 <% end %>
-</span>
 </div>
 <div id="eb" style="text-align:right;padding:20px;color:#DD3030;font-weight:bold">
 	<div id="pn" style="overflow:hidden">
