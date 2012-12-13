@@ -111,7 +111,7 @@ class LinksController < ApplicationController
 		@click.save
 		
 		# Redireciona o usuario para o link correto
-		redirect_to "http://" + @link.link.sub("http:\/\/","")
+		redirect_to @link.link
 		
 	end
 	
