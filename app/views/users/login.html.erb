@@ -1,7 +1,7 @@
 <p><%= @results %></p>
 <%= form_tag "/users/login" do %>
-  <p>Email: <%= text_field_tag :email %></p>
-  <p>Senha: <%= password_field_tag :password %></p>
+  <p>Email: <%= text_field_tag :email %></p><br/>
+  <p>Senha: <input id="password" name="password" type="password" /></p><br/>
   <%= submit_tag "Save" %>
   <br /><br />
   <p><%= link_to 'Cadastre-se', '/users/new' %></p>
